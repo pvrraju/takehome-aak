@@ -16,7 +16,7 @@ db_path = current_dir / "data" / "worldbank_poplulation_data.duckdb"
 conn = duckdb.connect(str(db_path))
 
 
-@app.geet("/")
+@app.get("/")
 
 def home():
     return {"message": "Welcome to the World Bank Population Data API"}
